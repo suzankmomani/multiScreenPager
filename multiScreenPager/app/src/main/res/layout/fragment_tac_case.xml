@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="multiScreenPager.android.com.multiScreenPager.Fragment.TacCaseFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_padding_large"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/items_padding"
+            android:stretchColumns="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/items_padding"
+                android:layout_marginRight="@dimen/items_padding"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/name"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/items_padding"
+                android:layout_marginRight="@dimen/items_padding"
+                android:layout_weight="5"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/server"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/items_padding"
+                android:layout_marginRight="@dimen/items_padding"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="@string/status"
+                android:textSize="@dimen/normal_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parentViewCurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/lightest_gray" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/older"
+                android:textSize="@dimen/normal_font_size" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/lightest_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parentViewOlder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

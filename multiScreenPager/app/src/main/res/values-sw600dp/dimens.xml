@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="normal_font_size">16sp</dimen>
+    <dimen name="items_padding">20dp</dimen>
+    <dimen name="items_padding_small">6dp</dimen>
+    <dimen name="max_text_width">60dp</dimen>
+    <dimen name="status_image">16dp</dimen>
+    <dimen name="max_title_width">100dp</dimen>
+    <dimen name="items_padding_large">30dp</dimen>
+</resources>
